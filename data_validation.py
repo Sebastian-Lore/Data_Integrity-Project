@@ -25,13 +25,22 @@ def validate_csv(file_path):
 
             # loop through failure cases and handle each type
             for _, error in failure_cases.iterrows():
-                print(failure_cases)
-                print("")
-
-                failure = error["failure_case"]
+                # extract the failure information
                 index = error["index"]
-                # print(f"This is failure: {failure}")
-                # print(f"This is index: {index}")
+                failure_case = error["failure_case"]
+                # print(failure_cases)
+                
+                # get the corresponding row
+                failing_row = df.iloc[index]
+
+                # identify the column based on the failure
+                for column in alarm_schema.columns:
+                    if failure_case == failing_row[column]:
+                        print(f"Column '{column}' failed validation:")
+                        print(f"  alarm_id: {failing_row['alarm_id']}")
+                        print(f"  {column}: {failing_row[column]}")
+                        print(f"  Failure: {failure_case}")
+                        break
 
     except Exception as ex:
         print(f"An error occurred: {ex}")
