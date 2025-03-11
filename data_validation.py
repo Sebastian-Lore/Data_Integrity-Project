@@ -52,4 +52,4 @@ def validate_csv(file_path):
 
 
 if __name__ == "__main__":
-    validate_csv("C:/Users/slore/Desktop/Python Projects/data_integrity/data.csv")
+    validate_csv(r"C:\Users\slore\Desktop\Python Projects\Data_Integrity-Project/data.csv")
