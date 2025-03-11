@@ -1,0 +1,36 @@
+Validation errors found in data.csv:
+
+Column 'timestamp' failed validation:
+  alarm_id: 1
+  Failure: 202503-08 10:15:30
+
+
+Column 'timestamp' failed validation:
+  alarm_id: 3
+  Failure: 202503-08 10:25:00
+
+
+Column 'alarm_code' failed validation:
+  alarm_id: 2
+  Failure: LM002
+
+
+Column 'alarm_code' failed validation:
+  alarm_id: 5
+  Failure: AL005
+
+
+Column 'alarm_code' failed validation:
+  alarm_id: 6
+  Failure: AL005
+
+
+Column 'severity' failed validation:
+  alarm_id: 1
+  Failure: Hello
+
+
+Column 'severity' failed validation:
+  alarm_id: 4
+  Failure: No string has been Entered
+

@@ -4,3 +4,4 @@ alarm_id,timestamp,site_id,alarm_code,severity,status
 3,202503-08 10:25:00,103,ALM003,Minor,Resolved
 4,2025-03-08 10:30:15,101,ALM004,,New
 5,2025-03-08 10:35:25,104,AL005,Critical,New
+6,08-03-2025 10:35:28,105,AL005,Major,New
