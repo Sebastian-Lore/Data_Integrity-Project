@@ -1,3 +1,12 @@
+# This file validates alarm data stored in a CSV file using the Pandera library by doing the following. 
+#   Loads the CSV file into a Pandas DataFrame.
+#   Fills missing values in string columns with "No string has been Entered".
+#   Attempts validation against alarm_schema.
+# If validation fails, errors are captured and written to validation_errors.txt, specifying:
+#   Column that failed validation.
+#   alarm_id of the affected row.
+#   The failure case.
+
 # imports
 import pandas as pd
 import pandera as pa
